@@ -77,7 +77,7 @@ export async function POST(request) {
     const subject = `Nueva consulta de ${name.trim()} - ${eventType}`;
 
     const { data, error } = await resend.emails.send({
-      from: "Luis Achucarro Web <achu8759@gmail.com>",
+      from: "achu8759@gmail.com",
       to: ["achu8759@gmail.com"],
       subject,
       html: buildEmailHtml({
