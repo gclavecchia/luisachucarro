@@ -78,7 +78,7 @@ export async function POST(request) {
 
     const { data, error } = await resend.emails.send({
       from: "Luis Achucarro Web <onboarding@resend.dev>",
-      to: ["achu8751@gmail.com", "contacto@luisachucarro.com"],
+      to: ["achu8751@gmail.com"],
       subject,
       html: buildEmailHtml({
         name: name.trim(),
