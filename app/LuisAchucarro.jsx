@@ -655,9 +655,23 @@ export default function LuisAchucarro() {
           <h1 style={{ animation: "fadeUp 1s ease-out 0.4s both", marginBottom: "12px" }}>
             <span className="hero-title">{t.hero.title1}</span>
           </h1>
-          <h1 style={{ animation: "fadeUp 1s ease-out 0.6s both", marginBottom: "40px" }}>
-            <span className="hero-title hero-title-accent">{t.hero.title2}</span>
-          </h1>
+          <div style={{ display: "flex", alignItems: "center", gap: "24px", marginBottom: "40px", flexWrap: "wrap" }}>
+            <h1 style={{ animation: "fadeUp 1s ease-out 0.6s both", margin: 0 }}>
+              <span className="hero-title hero-title-accent">{t.hero.title2}</span>
+            </h1>
+            <img
+              src="/logo-achucarro.png"
+              alt=""
+              aria-hidden
+              style={{
+                height: "clamp(40px, 5vw, 64px)",
+                width: "auto",
+                objectFit: "contain",
+                opacity: 0.85,
+                animation: "fadeUp 1s ease-out 0.7s both",
+              }}
+            />
+          </div>
 
           <p className="body-text" style={{ maxWidth: "520px", fontSize: "15px", lineHeight: "1.9", animation: "fadeUp 1s ease-out 0.8s both", marginBottom: "48px" }}>
             {t.hero.subtitle}
@@ -1022,9 +1036,22 @@ export default function LuisAchucarro() {
               <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "18px", fontWeight: 600, color: "#F5F0EB" }}>LUIS</span>
               <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "18px", fontWeight: 300, fontStyle: "italic", color: "#C9A96E" }}>Achucarro</span>
             </div>
-            <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "11px", color: "#5A5650", letterSpacing: "0.5px" }}>
-              {t.footer.tagline}
-            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "14px", flexWrap: "wrap" }}>
+              <img
+                src="/logo-achucarro.png"
+                alt="Achucarro"
+                style={{
+                  height: "36px",
+                  width: "auto",
+                  objectFit: "contain",
+                  opacity: 0.9,
+                }}
+              />
+              <span style={{ width: "1px", height: "14px", background: "rgba(201,169,110,0.25)" }} />
+              <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "11px", color: "#5A5650", letterSpacing: "0.5px", margin: 0 }}>
+                {t.footer.tagline}
+              </p>
+            </div>
           </div>
 
           <div style={{ textAlign: "center" }}>
